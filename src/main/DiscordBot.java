@@ -36,7 +36,9 @@ public class DiscordBot {
 		playerManager = new PlayerManager();
 		AudioSourceManagers.registerRemoteSources(audioPlayerManager);
 		
-		JDABuilder builder = JDABuilder.createDefault("NjkxOTQ4MTY4MDg2MTU5NDQw.XnnY8w.WPXjfc7MyWny9xqBHCElkjab8l4");
+		String botToken = "";
+		
+		JDABuilder builder = JDABuilder.createDefault(botToken);
 
 		builder.setActivity(Activity.playing("wüxen"));
 		builder.addEventListeners(new CommandListener());
